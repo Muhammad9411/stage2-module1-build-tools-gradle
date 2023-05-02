@@ -9,8 +9,6 @@ public class StringUtils {
             if (str != null && !str.equals("")) {
                 if (isPositive > 0) {
                     result = true;
-                } else if (isPositive < 0) {
-                    result = false;
                 }
             }
         } catch (NumberFormatException nfe) {
