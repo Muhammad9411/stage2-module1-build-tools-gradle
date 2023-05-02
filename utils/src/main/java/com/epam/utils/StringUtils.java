@@ -6,6 +6,9 @@ public class StringUtils {
         boolean result = false;
         try {
             if (str != null && !str.equals("")) {
+                if(str.startsWith("0")) {
+                    return false;
+                }
                 double isPositive = Double.parseDouble(str);
                 if (isPositive > 0) {
                     result = true;
