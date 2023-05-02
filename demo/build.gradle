@@ -1,7 +1,22 @@
-//add everything here
+plugins {
+    id 'java'// id for library
+}
 
+group 'com.epam.demo'
+version '1.3.5'
+
+//add everything here
+repositories {
+// provide repository, where required dependencies are located
+    mavenLocal()
+    mavenCentral()
+}
 test {
     useJUnitPlatform()
+}
+
+dependencies {
+    implementation 'com.epam.utils:utils:1.3.5'
 }
 
 compileJava {}.dependsOn(':utils:publishToMavenLocal')
