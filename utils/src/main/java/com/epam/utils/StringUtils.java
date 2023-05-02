@@ -5,7 +5,7 @@ public class StringUtils {
     public static boolean isPositiveNumber(String str) {
         boolean result = false;
         try {
-            int isPositive = Integer.parseInt(str);
+            double isPositive = Double.parseDouble(str);
             if (str != null && !str.equals("")) {
                 if (isPositive > 0) {
                     result = true;
